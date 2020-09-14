@@ -1,0 +1,45 @@
+<div class="col-box">
+  <h1 class="section-title">Recent Transactions</h1>
+
+  <section>
+    <div class="grid-inner grid-sort-padding">
+      <div class="grid-box-sort">
+        <input
+          type="text"
+          id="filter"
+          aria-describedby="search"
+          [(ngModel)]="filter"
+          placeholder="Search by typing..."
+        />
+      </div>
+      <div class="grid-box-sort">Sort by</div>
+      <div class="grid-box-sort buttons">
+        Date <span class="arrow">&#9660;</span>
+      </div>
+      <div class="grid-box-sort buttons">Beneficiary</div>
+      <div class="grid-box-sort buttons">Amount</div>
+    </div>
+  </section>
+
+  <section *ngIf="transactions$ | async as transactions">
+    <div class="grid" *ngFor="let transaction of transactions | search: filter">
+      <div class="grid-inner">
+        <div
+          [ngStyle]="{
+            'min-height': '60px',
+            'border-left': '7px solid' + transaction.categoryCode
+          }"
+        ></div>
+        <div class="grid-box">
+          {{ transaction.transactionDate | date: "MMM. d" }}
+        </div>
+        <img src="{{ transaction.merchantLogo }}" />
+        <div class="grid-box">
+          {{ transaction.merchant }}
+          <div>{{ transaction.transactionType }}</div>
+        </div>
+        <div class="grid-box">{{ transaction.amount }}</div>
+      </div>
+    </div>
+  </section>
+</div>

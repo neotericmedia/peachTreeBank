@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin title {
+  display: block;
+  font-weight: 300;
+  color: $color-white;
+  text-align: center;
+  background: $color-blue no-repeat 8px 0px;
+}
+
+@mixin box {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+  background-color: $color-white;
+  margin-bottom: 160px;
+  article,
+  section {
+    padding: 0 15px 12px 15px;
+    display: block;
+  }
+}

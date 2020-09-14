@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { TransfersComponent } from './transfers/transfers.component';
+import { TransactionsFiltersComponent } from './transactions/transactions-filters/transactions-filters.component';
+import { SearchPipe } from './pipes/search.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TransactionsComponent,
+    TransfersComponent,
+    TransactionsFiltersComponent,
+    SearchPipe,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, NgbModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
