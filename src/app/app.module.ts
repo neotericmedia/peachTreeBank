@@ -8,7 +8,7 @@ import { TransactionsComponent } from './transactions/transactions.component';
 import { TransfersComponent } from './transfers/transfers.component';
 import { TransfersFormComponent } from './transfers/transfers-form/transfers-form.component';
 import { TransfersSummaryComponent } from './transfers/transfers-summary/transfers-summary.component';
-// import { TransactionsFiltersComponent } from './transactions/transactions-filters/transactions-filters.component';
+import { TransactionsSortComponent } from './transactions/transactions-sort/transactions-sort.component';
 import { SearchPipe } from './pipes/search.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -19,7 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TransfersComponent,
     TransfersFormComponent,
     TransfersSummaryComponent,
-    // TransactionsFiltersComponent,
+    TransactionsSortComponent,
     SearchPipe,
   ],
   imports: [BrowserModule, NgbModule, FormsModule, ReactiveFormsModule],

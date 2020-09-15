@@ -18,4 +18,8 @@ export class TransactionsComponent {
   ngOnInit(): void {
     this.transactions$ = this.transactionService.transaction$;
   }
+
+  inputSort(name) {
+    this.filter = name;
+  }
 }

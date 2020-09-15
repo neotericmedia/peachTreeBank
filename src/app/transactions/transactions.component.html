@@ -1,35 +1,11 @@
 <div class="col-box">
   <h1 class="section-title">Recent Transactions</h1>
   <section>
-    <div class="grid-sort-padding">
-      <div class="row">
-        <div class="col-md-5">
-          <input
-            type="text"
-            id="filter"
-            aria-describedby="search"
-            [(ngModel)]="filter"
-            placeholder="Search by typing..."
-          />
-        </div>
-        <div
-          class="col-md-2"
-          style="display: flex; align-items: center; justify-content: flex-end"
-        >
-          Sort by
-        </div>
-        <div
-          class="col-md-5"
-          style="display: flex; align-items: center; justify-content: flex-end"
-        >
-          <div class="buttons">Date</div>
-          <div class="buttons">Beneficiary</div>
-          <div class="buttons">Amount</div>
-        </div>
-      </div>
-    </div>
+    <app-transactions-sort
+      [filter]="filter"
+      (inputSort)="inputSort($event)"
+    ></app-transactions-sort>
   </section>
-
   <section *ngIf="transactions$ | async as transactions">
     <div class="grid" *ngFor="let transaction of transactions | search: filter">
       <div class="grid-inner">

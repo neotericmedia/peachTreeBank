@@ -9,9 +9,9 @@ export class Transaction {
   constructor(amount: string, merchant: string, merchantLogo?: string) {
     this.amount = amount;
     this.merchant = merchant;
-    this.merchantLogo = merchantLogo || '';
-    this.transactionType = 'Online Transfer';
-    this.categoryCode = '#e25a2c';
+    this.merchantLogo = merchantLogo;
+    this.transactionType = 'Web Transfer';
+    this.categoryCode = '#ee7033';
     this.transactionDate = new Date().getTime();
   }
 }
