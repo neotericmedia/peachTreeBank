@@ -1,7 +1,7 @@
 export const Transactions = {
   data: [
     {
-      amount: '45',
+      amount: '82.02',
       categoryCode: '#12a580',
       merchant: 'The Tea Lounge',
       merchantLogo:
@@ -10,7 +10,7 @@ export const Transactions = {
       transactionType: 'Card Payment',
     },
     {
-      amount: '23',
+      amount: '84.64',
       categoryCode: '#d51271',
       merchant: 'Texaco',
       merchantLogo:
@@ -19,7 +19,7 @@ export const Transactions = {
       transactionType: 'Card Payment',
     },
     {
-      amount: '89',
+      amount: '84.76',
       categoryCode: '#12a580',
       merchant: 'The Tea Lounge',
       merchantLogo:
@@ -28,7 +28,7 @@ export const Transactions = {
       transactionType: 'Card Payment',
     },
     {
-      amount: '6',
+      amount: '22.10',
       categoryCode: '#c12020',
       merchant: 'Amazon Online Store',
       merchantLogo:
@@ -37,7 +37,7 @@ export const Transactions = {
       transactionType: 'Online Transfer',
     },
     {
-      amount: '0',
+      amount: '46.25',
       categoryCode: '#c89616',
       merchant: '7-Eleven',
       merchantLogo:
@@ -46,7 +46,7 @@ export const Transactions = {
       transactionType: 'Card Payment',
     },
     {
-      amount: '976',
+      amount: '19.72',
       categoryCode: '#e25a2c',
       merchant: 'H&M Online Store',
       merchantLogo:
@@ -55,7 +55,7 @@ export const Transactions = {
       transactionType: 'Online Transfer',
     },
     {
-      amount: '67',
+      amount: '68.87',
       categoryCode: '#1180aa',
       merchant: 'Jerry Hildreth',
       merchantLogo:
@@ -64,7 +64,7 @@ export const Transactions = {
       transactionType: 'Transaction',
     },
     {
-      amount: '3',
+      amount: '52.36',
       categoryCode: '#1180aa',
       merchant: 'Lawrence Pearson',
       merchantLogo:
@@ -73,7 +73,7 @@ export const Transactions = {
       transactionType: 'Transaction',
     },
     {
-      amount: '32',
+      amount: '75.93',
       categoryCode: '#12a580',
       merchant: 'Whole Foods',
       merchantLogo:
@@ -82,7 +82,7 @@ export const Transactions = {
       transactionType: 'Card Payment',
     },
     {
-      amount: '2',
+      amount: '142.95',
       categoryCode: '#fbbb1b',
       merchant: 'Southern Electric Company',
       merchantLogo:

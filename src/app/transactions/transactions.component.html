@@ -4,6 +4,7 @@
     <app-transactions-sort
       [filter]="filter"
       (inputSort)="inputSort($event)"
+      (colSort)="colSort($event)"
     ></app-transactions-sort>
   </section>
   <section *ngIf="transactions$ | async as transactions">
@@ -23,7 +24,7 @@
           {{ transaction.merchant }}
           <div>{{ transaction.transactionType }}</div>
         </div>
-        <div class="grid-box">{{ transaction.amount }}</div>
+        <div class="grid-box">{{ transaction.amount | currency }}</div>
       </div>
     </div>
   </section>

@@ -8,8 +8,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class TransactionsSortComponent {
   @Input('filter') filter: string;
   @Output() inputSort = new EventEmitter<String>();
+  @Output() colSort = new EventEmitter<String>();
 
-  mychange(event: any) {
+  mychange(event) {
     this.inputSort.emit(event);
+  }
+  colSortFunc(event) {
+    this.colSort.emit(event);
   }
 }

@@ -11,21 +11,17 @@ export class TransfersComponent {
   transaction: Transaction;
   balance = 5824.75;
 
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  onFormSubmitting(e): void {
+  onFormSubmitting(e) {
     this.showSummary = true;
     this.transaction = e;
   }
 
-  onTransferIsMade(e): void {
+  onTransferIsMade(e) {
     this.showSummary = false;
     this.balance -= e;
   }
 
-  onTransferCancellation(): void {
+  onTransferCancellation() {
     this.showSummary = false;
   }
 }

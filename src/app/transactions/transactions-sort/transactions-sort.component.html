@@ -6,15 +6,15 @@
         id="filter"
         aria-describedby="search"
         [(ngModel)]="filter"
-        placeholder="Search by typing..."
         (ngModelChange)="mychange($event)"
+        placeholder="Search by typing..."
       />
     </div>
     <div class="col-md-2 sortBy">Sort by</div>
     <div class="col-md-5 sortButtons">
-      <div class="buttons">Date</div>
-      <div class="buttons">Beneficiary</div>
-      <div class="buttons">Amount</div>
+      <div class="buttons" (click)="colSortFunc('transactionDate')">Date</div>
+      <div class="buttons" (click)="colSortFunc('merchant')">Beneficiary</div>
+      <div class="buttons" (click)="colSortFunc('amount')">Amount</div>
     </div>
   </div>
 </div>
