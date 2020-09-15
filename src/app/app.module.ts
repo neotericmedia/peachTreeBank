@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { TransfersComponent } from './transfers/transfers.component';
-import { TransactionsFiltersComponent } from './transactions/transactions-filters/transactions-filters.component';
+import { TransfersFormComponent } from './transfers/transfers-form/transfers-form.component';
+import { TransfersSummaryComponent } from './transfers/transfers-summary/transfers-summary.component';
+// import { TransactionsFiltersComponent } from './transactions/transactions-filters/transactions-filters.component';
 import { SearchPipe } from './pipes/search.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -14,10 +17,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     TransactionsComponent,
     TransfersComponent,
-    TransactionsFiltersComponent,
+    TransfersFormComponent,
+    TransfersSummaryComponent,
+    // TransactionsFiltersComponent,
     SearchPipe,
   ],
-  imports: [BrowserModule, NgbModule, FormsModule],
+  imports: [BrowserModule, NgbModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

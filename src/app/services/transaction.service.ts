@@ -14,7 +14,7 @@ export class TransactionService {
 
   constructor() {}
 
-  // addTransaction(transaction: Transaction): any {
-  //   this.transaction$.next([transaction, ...this.transaction$.getValue()]);
-  // }
+  addTransaction(transaction: Transaction): any {
+    this.transaction$.next([transaction, ...this.transaction$.getValue()]);
+  }
 }

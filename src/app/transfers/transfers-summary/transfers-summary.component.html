@@ -1,0 +1,20 @@
+<div class="form-sum">
+  <div class="form-group">
+    <label>From account</label>
+    <div class="input-from">Free Checking(4692)</div>
+  </div>
+  <div class="form-group">
+    <label>Balance before transaction</label>
+    <div class="input-from">${{ balance }}</div>
+  </div>
+  <div class="form-group">
+    <label>To account</label>
+    <div class="input-from">{{ transaction.merchant }}</div>
+  </div>
+  <div class="form-group">
+    <label>Amount</label>
+    <div class="input-from">${{ transaction.amount }}</div>
+  </div>
+  <button (click)="back()" class="btn">Back</button>
+  <button (click)="makeTransfer()" class="btn">Transfer</button>
+</div>

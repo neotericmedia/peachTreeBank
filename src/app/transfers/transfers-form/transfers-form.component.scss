@@ -1,0 +1,39 @@
+@import "./../../../styles/variables";
+
+form {
+  margin: 30px 0 20px 0;
+  font-size: 0.8em;
+  overflow: hidden;
+  .from {
+    opacity: 50%;
+  }
+  label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  button {
+    margin-top: 20px;
+    background-color: $color-orange;
+    color: $color-white;
+    max-width: 180px;
+    width: 100%;
+    float: right;
+    text-transform: uppercase;
+  }
+  .errors {
+    color: $color-red;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $color-gray;
+    line-height: 30px;
+    width: 100%;
+    opacity: 60%;
+  }
+}
