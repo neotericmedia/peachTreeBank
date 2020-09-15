@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Transaction } from '../models/transaction.model';
+import { TransactionService } from '../services/transaction.service';
 
 @Component({
   selector: 'app-transfers',
@@ -9,7 +10,13 @@ import { Transaction } from '../models/transaction.model';
 export class TransfersComponent {
   showSummary: boolean;
   transaction: Transaction;
-  balance = 5824.75;
+  balance: number;
+
+  constructor(private transactionService: TransactionService) {}
+
+  ngOnInit() {
+    this.balance = this.transactionService.balance;
+  }
 
   onFormSubmitting(e) {
     this.showSummary = true;

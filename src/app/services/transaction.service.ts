@@ -7,6 +7,7 @@ import { Transactions } from '../api/data';
   providedIn: 'root',
 })
 export class TransactionService {
+  balance = 5824.75;
   transactions = Transactions;
   transaction$: BehaviorSubject<Transaction[]> = new BehaviorSubject<
     Transaction[]
