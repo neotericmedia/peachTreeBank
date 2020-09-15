@@ -24,7 +24,7 @@
           {{ transaction.merchant }}
           <div>{{ transaction.transactionType }}</div>
         </div>
-        <div class="grid-box">{{ transaction.amount | currency }}</div>
+        <div class="grid-box">-{{ transaction.amount | currency }}</div>
       </div>
     </div>
   </section>
